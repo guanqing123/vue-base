@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="app"></div>
+	<script type="text/javascript" src="../node_modules/vue/dist/vue.min.js"></script>
+	<script type="text/javascript">
+		// v-model只适应于在 有value
+		new Vue({
+			el:'#app',
+            	<!-- <input type="text"  v-model = 'msg'/>-->
+			template:`
+				<div>
+					<input type="text"  v-bind:value = 'msg' v-on:input = 'change'/>
+					<p>{{ msg }}</p>
+					<input type="number" v-model.number="num" />
+					<p>num:{{num}}</p>
+				</div>
+			`,
+			data:function(){
+				return {
+					msg:'hello 双向绑定',
+					num: 0
+				}
+			},
+			methods:{
+				change(e){
+					console.log(e.target.value);
+					this.msg = e.target.value;
+				}
+			}
+		});
+	</script>
+	
+</body>
+</html>
