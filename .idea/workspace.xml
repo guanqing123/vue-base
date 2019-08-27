@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16952b25-dba0-4ec5-ba90-af7a7aaae63a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/01_vue中的局部组件.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/02-父组件通信到子组件.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/03-通过事件向父组件发送消息.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/04-全局组件的使用.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/05-具名插槽.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/06-过滤器.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/07-wacth.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/08-计算属性之computed.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/09-组件的生命周期.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/static/Joel Adams - Please Dont Go.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/static/MKJ - Time.mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/static/Russ - Psycho (Pt. 2).mp3" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/secondDay/static/于荣光 - 少林英雄.mp3" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/secondDay/06-过滤器.html" afterPath="$PROJECT_DIR$/secondDay/06-过滤器.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,8 +27,8 @@
       <file leaf-file-name="01_vue中的局部组件.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secondDay/01_vue中的局部组件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+            <state relative-caret-position="960">
+              <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
               <folding>
                 <marker date="1566729775097" expanded="true" signature="857:888" ph="..." />
                 <marker date="1566729775097" expanded="true" signature="971:1008" ph="..." />
@@ -41,7 +43,7 @@
       <file leaf-file-name="02-父组件通信到子组件.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secondDay/02-父组件通信到子组件.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
+            <state relative-caret-position="2856">
               <caret line="119" column="22" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="22" />
               <folding>
                 <marker date="1566730026613" expanded="true" signature="956:1113" ph="..." />
@@ -59,7 +61,7 @@
       <file leaf-file-name="03-通过事件向父组件发送消息.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secondDay/03-通过事件向父组件发送消息.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
+            <state relative-caret-position="2280">
               <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="30" />
               <folding>
                 <marker date="1566731406969" expanded="true" signature="952:1110" ph="..." />
@@ -77,7 +79,7 @@
       <file leaf-file-name="04-全局组件的使用.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secondDay/04-全局组件的使用.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1356">
+            <state relative-caret-position="2712">
               <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="25" />
               <folding>
                 <element signature="e#2587#2935#0" expanded="false" />
@@ -86,11 +88,7 @@
                 <marker date="1566732188619" expanded="true" signature="1955:1988" ph="..." />
                 <marker date="1566732188619" expanded="true" signature="2094:2295" ph="..." />
                 <marker date="1566732188619" expanded="false" signature="2153:2284" ph="..." />
-                <marker date="1566732188619" expanded="true" signature="2196:2272" ph="..." />
                 <marker date="1566732188619" expanded="true" signature="2475:2531" ph="..." />
-                <marker date="1566732188619" expanded="true" signature="2630:2712" ph="..." />
-                <marker date="1566732188619" expanded="true" signature="3060:3205" ph="..." />
-                <marker date="1566732188619" expanded="true" signature="3129:3194" ph="..." />
               </folding>
             </state>
           </provider>
@@ -99,8 +97,8 @@
       <file leaf-file-name="05-具名插槽.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secondDay/05-具名插槽.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+            <state relative-caret-position="576">
+              <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="31" />
               <folding>
                 <marker date="1566740550507" expanded="true" signature="284:384" ph="..." />
                 <marker date="1566740550507" expanded="true" signature="437:580" ph="..." />
@@ -111,13 +109,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="06-过滤器.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="07-wacth.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/secondDay/07-wacth.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="08-计算属性之computed.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/secondDay/08-计算属性之computed.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="768">
+              <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="09-组件的生命周期.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/secondDay/09-组件的生命周期.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2146">
+              <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="20" />
+              <folding>
+                <marker date="1534258568000" expanded="true" signature="502:587" ph="..." />
+                <marker date="1534258568000" expanded="true" signature="1755:1894" ph="..." />
+                <marker date="1534258568000" expanded="true" signature="1773:1828" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="06-过滤器.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/secondDay/06-过滤器.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="1008">
+              <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding>
-                <marker date="1566740918752" expanded="true" signature="612:766" ph="..." />
+                <marker date="1566912331223" expanded="true" signature="598:752" ph="..." />
               </folding>
             </state>
           </provider>
@@ -150,6 +182,8 @@
         <option value="$PROJECT_DIR$/secondDay/04-全局组件的使用.html" />
         <option value="$PROJECT_DIR$/secondDay/05-具名插槽.html" />
         <option value="$PROJECT_DIR$/secondDay/06-过滤器.html" />
+        <option value="$PROJECT_DIR$/secondDay/07-wacth.html" />
+        <option value="$PROJECT_DIR$/secondDay/08-计算属性之computed.html" />
       </list>
     </option>
   </component>
@@ -162,10 +196,10 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-11" />
     <option name="y" value="-11" />
-    <option name="width" value="2582" />
+    <option name="width" value="2574" />
     <option name="height" value="1562" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -184,8 +218,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,6 +249,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\guanqing\practise\git\vue-base\secondDay" />
+      <recent name="C:\guanqing\practise\git\vue-base\secondDay\static" />
       <recent name="C:\guanqing\practise\git\vue-base\firstDay" />
     </key>
   </component>
@@ -244,18 +279,19 @@
       <option name="presentableId" value="Default" />
       <updated>1566655086471</updated>
       <workItem from="1566655087767" duration="1258000" />
-      <workItem from="1566699527953" duration="12768000" />
+      <workItem from="1566699527953" duration="13043000" />
+      <workItem from="1566911286324" duration="2747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14026000" />
+    <option name="totallyTimeSpent" value="17048000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="-11" width="2582" height="1562" extended-state="6" />
+    <frame x="-11" y="-11" width="2574" height="1562" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980205" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17752184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -285,6 +321,91 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/secondDay/01_vue中的局部组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <marker date="1566729775097" expanded="true" signature="857:888" ph="..." />
+            <marker date="1566729775097" expanded="true" signature="971:1008" ph="..." />
+            <marker date="1566729775097" expanded="true" signature="1102:1144" ph="..." />
+            <marker date="1566729775097" expanded="true" signature="1230:1333" ph="..." />
+            <marker date="1566729775097" expanded="true" signature="1274:1322" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondDay/02-父组件通信到子组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2856">
+          <caret line="119" column="22" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="22" />
+          <folding>
+            <marker date="1566730026613" expanded="true" signature="956:1113" ph="..." />
+            <marker date="1566730026613" expanded="true" signature="972:1102" ph="..." />
+            <marker date="1566730026613" expanded="true" signature="1015:1091" ph="..." />
+            <marker date="1566730026613" expanded="true" signature="1210:1234" ph="..." />
+            <marker date="1566730026613" expanded="true" signature="1328:1357" ph="..." />
+            <marker date="1566730026613" expanded="true" signature="1443:1563" ph="..." />
+            <marker date="1566730026613" expanded="true" signature="1487:1552" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondDay/03-通过事件向父组件发送消息.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="30" />
+          <folding>
+            <marker date="1566731406969" expanded="true" signature="952:1110" ph="..." />
+            <marker date="1566731406969" expanded="true" signature="968:1099" ph="..." />
+            <marker date="1566731406969" expanded="true" signature="1011:1087" ph="..." />
+            <marker date="1566731406969" expanded="true" signature="1198:1222" ph="..." />
+            <marker date="1566731406969" expanded="true" signature="1310:1386" ph="..." />
+            <marker date="1566731406969" expanded="true" signature="1662:1807" ph="..." />
+            <marker date="1566731406969" expanded="true" signature="1731:1796" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondDay/04-全局组件的使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2712">
+          <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="25" />
+          <folding>
+            <element signature="e#2587#2935#0" expanded="false" />
+            <element signature="e#2977#3769#0" expanded="false" />
+            <element signature="e#3784#3990#0" expanded="false" />
+            <marker date="1566732188619" expanded="true" signature="1955:1988" ph="..." />
+            <marker date="1566732188619" expanded="true" signature="2094:2295" ph="..." />
+            <marker date="1566732188619" expanded="false" signature="2153:2284" ph="..." />
+            <marker date="1566732188619" expanded="true" signature="2475:2531" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondDay/05-具名插槽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <marker date="1566740550507" expanded="true" signature="284:384" ph="..." />
+            <marker date="1566740550507" expanded="true" signature="437:580" ph="..." />
+            <marker date="1566740550507" expanded="true" signature="447:569" ph="..." />
+            <marker date="1566740550507" expanded="true" signature="462:550" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondDay/06-过滤器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding>
+            <marker date="1566912331223" expanded="true" signature="598:752" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -365,20 +486,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="486">
           <caret line="35" column="12" lean-forward="true" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
-          <folding>
-            <marker date="1566719785549" expanded="true" signature="821:852" ph="..." />
-            <marker date="1566719785549" expanded="true" signature="929:966" ph="..." />
-            <marker date="1566719785549" expanded="true" signature="1060:1102" ph="..." />
-            <marker date="1566719785549" expanded="true" signature="1180:1283" ph="..." />
-            <marker date="1566719785549" expanded="true" signature="1224:1272" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/secondDay/01_vue中的局部组件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="35" lean-forward="true" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+        <state relative-caret-position="960">
+          <caret line="40" column="35" lean-forward="false" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
           <folding>
             <marker date="1566729775097" expanded="true" signature="857:888" ph="..." />
             <marker date="1566729775097" expanded="true" signature="971:1008" ph="..." />
@@ -391,7 +505,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/secondDay/02-父组件通信到子组件.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
+        <state relative-caret-position="2856">
           <caret line="119" column="22" lean-forward="false" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="22" />
           <folding>
             <marker date="1566730026613" expanded="true" signature="956:1113" ph="..." />
@@ -407,7 +521,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/secondDay/03-通过事件向父组件发送消息.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
+        <state relative-caret-position="2280">
           <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="30" />
           <folding>
             <marker date="1566731406969" expanded="true" signature="952:1110" ph="..." />
@@ -423,7 +537,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/secondDay/04-全局组件的使用.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1356">
+        <state relative-caret-position="2712">
           <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="21" selection-end-line="113" selection-end-column="25" />
           <folding>
             <element signature="e#2587#2935#0" expanded="false" />
@@ -432,19 +546,15 @@
             <marker date="1566732188619" expanded="true" signature="1955:1988" ph="..." />
             <marker date="1566732188619" expanded="true" signature="2094:2295" ph="..." />
             <marker date="1566732188619" expanded="false" signature="2153:2284" ph="..." />
-            <marker date="1566732188619" expanded="true" signature="2196:2272" ph="..." />
             <marker date="1566732188619" expanded="true" signature="2475:2531" ph="..." />
-            <marker date="1566732188619" expanded="true" signature="2630:2712" ph="..." />
-            <marker date="1566732188619" expanded="true" signature="3060:3205" ph="..." />
-            <marker date="1566732188619" expanded="true" signature="3129:3194" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/secondDay/05-具名插槽.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        <state relative-caret-position="576">
+          <caret line="27" column="31" lean-forward="false" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="31" />
           <folding>
             <marker date="1566740550507" expanded="true" signature="284:384" ph="..." />
             <marker date="1566740550507" expanded="true" signature="437:580" ph="..." />
@@ -456,10 +566,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/secondDay/06-过滤器.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="35" lean-forward="true" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="1008">
+          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
           <folding>
-            <marker date="1566740918752" expanded="true" signature="612:766" ph="..." />
+            <marker date="1566912331223" expanded="true" signature="598:752" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondDay/07-wacth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="38" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondDay/08-计算属性之computed.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="53" column="33" lean-forward="false" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/secondDay/09-组件的生命周期.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2146">
+          <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="20" />
+          <folding>
+            <marker date="1534258568000" expanded="true" signature="502:587" ph="..." />
+            <marker date="1534258568000" expanded="true" signature="1755:1894" ph="..." />
+            <marker date="1534258568000" expanded="true" signature="1773:1828" ph="..." />
           </folding>
         </state>
       </provider>
