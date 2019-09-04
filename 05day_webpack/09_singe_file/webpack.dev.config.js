@@ -47,7 +47,7 @@ module.exports = {
 	plugins: [
 		//插件的执行顺序与元素有关
 		new htmlWebpackPlugin({
-			template:'./src/index.html', //参照物
+			template:'./src/Index.html', //参照物
 		})
 	]
 }

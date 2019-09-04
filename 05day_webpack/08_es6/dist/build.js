@@ -788,7 +788,7 @@ var $at = __webpack_require__(40)(true);
 // 21.1.3.27 String.prototype[@@iterator]()
 __webpack_require__(22)(String, 'String', function (iterated) {
   this._t = String(iterated); // target
-  this._i = 0;                // next index
+  this._i = 0;                // next Index
 // 21.1.5.2.1 %StringIteratorPrototype%.next()
 }, function () {
   var O = this._t;
@@ -1106,7 +1106,7 @@ var toIObject = __webpack_require__(18);
 // 22.1.3.30 Array.prototype[@@iterator]()
 module.exports = __webpack_require__(22)(Array, 'Array', function (iterated, kind) {
   this._t = toIObject(iterated); // target
-  this._i = 0;                   // next index
+  this._i = 0;                   // next Index
   this._k = kind;                // kind
 // 22.1.5.2.1 %ArrayIteratorPrototype%.next()
 }, function () {

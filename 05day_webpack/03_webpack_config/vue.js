@@ -75,7 +75,7 @@
   }
 
   /**
-   * Check if val is a valid array index.
+   * Check if val is a valid array Index.
    */
   function isValidArrayIndex (val) {
     var n = parseFloat(String(val));
@@ -329,7 +329,7 @@
   }
 
   /**
-   * Return the first index at which a loosely equal value can be
+   * Return the first Index at which a loosely equal value can be
    * found in the array (if value is a plain object, the array must
    * contain an object of the same shape), or -1 if it is not present.
    */
@@ -6528,7 +6528,7 @@
                 // e.g. for directives that uses the "inserted" hook.
                 var insert = ancestor.data.hook.insert;
                 if (insert.merged) {
-                  // start at index 1 to avoid re-invoking component mounted hook
+                  // start at Index 1 to avoid re-invoking component mounted hook
                   for (var i$2 = 1; i$2 < insert.fns.length; i$2++) {
                     insert.fns[i$2]();
                   }
@@ -9974,7 +9974,7 @@
           var parent = el.parent;
           if (iterator && iterator === exp && parent && parent.tag === 'transition-group') {
             warn$2(
-              "Do not use v-for index as key on <transition-group> children, " +
+              "Do not use v-for Index as key on <transition-group> children, " +
               "this is the same as not using keys.",
               getRawBindingAttr(el, 'key'),
               true /* tip */
