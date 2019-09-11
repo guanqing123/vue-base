@@ -10,59 +10,11 @@
     <!-- 下有九宫格 -->
     <div class="grid">
       <ul>
-        <li>
-        <a href="">
-          <span class="back-img"></span>
-          <div>1111</div>
-        </a>
-      </li>
-        <li>
-          <a href="">
-            <span class="back-img"></span>
-            <div>2222</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="back-img"></span>
-            <div>3333</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="back-img"></span>
-            <div>4444</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="back-img"></span>
-            <div>5555</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="back-img"></span>
-            <div>6666</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="back-img"></span>
-            <div>7777</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="back-img"></span>
-            <div>8888</div>
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <span class="back-img"></span>
-            <div>9999</div>
-          </a>
+        <li v-for="(module, index) in modules" :key="index">
+          <router-link :to="module.route">
+            <span :class="module.className"></span>
+            <div>{{module.title}}</div>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -74,14 +26,26 @@ export default {
   name: 'Home',
   data () {
     return {
-      imgs: [] // 轮播图数据
+      imgs: [], // 轮播图数据
+      modules: [{
+        title: '新闻资讯', className: 'back-news', route: { name: 'home' }
+      }, {
+        title: '图文分享', className: 'back-pic', route: { name: 'home' }
+      }, {
+        title: '商品展示', className: 'back-goods', route: { name: 'home' }
+      }, {
+        title: '留言反馈', className: 'back-feed', route: { name: 'home' }
+      }, {
+        title: '搜索资讯', className: 'back-search', route: { name: 'home' }
+      }, {
+        title: '联系我们', className: 'back-callme', route: { name: 'home' }
+      }]
     }
   },
   created () {
     this.$axios.get('/homepage/getHomePageList')
       .then(res => {
         this.imgs = res.data.data.map(item => item.fileRealPath)
-        console.log(this.imgs)
       })
       .catch(err => console.log(err))
   }
@@ -107,6 +71,24 @@ export default {
   background-repeat: round;
 }
 .back-img{
+  background-image: url("../../static/img/callme.png");
+}
+.back-news{
+  background-image: url("../../static/img/news.png");
+}
+.back-pic{
+  background-image: url("../../static/img/picShare.png");
+}
+.back-goods{
+  background-image: url("../../static/img/goodsShow.png");
+}
+.back-feed{
+  background-image: url("../../static/img/feedback.png");
+}
+.back-search{
+  background-image: url("../../static/img/search.png");
+}
+.back-callme{
   background-image: url("../../static/img/callme.png");
 }
 ul{
