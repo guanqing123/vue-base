@@ -13,6 +13,11 @@ import Axios from 'axios'
 // 引入自己的插件安装器
 import Installer from '@/plugins/installer'
 
+// 引入全局组件
+import MyUl from './components/common/MyUl'
+import MyLi from './components/common/MyLi'
+import NavBar from './components/common/NavBar'
+
 // mint-ui 开始
 // 引入css
 import 'mint-ui/lib/style.css'
@@ -22,13 +27,19 @@ import MintUI from 'mint-ui'
 Vue.use(MintUI) // 里面其实做的就是注册所有的全局组件,和给Vue.prototype挂载一些对象,方便你使用  组件内的this.xxx就能用了
 // mint-ui 结束
 
+// 注册全局组件
+Vue.component(MyUl.name, MyUl)
+Vue.component(MyLi.name, MyLi)
+Vue.component(NavBar.name, NavBar)
+
 // 安装插件
 Vue.use(Installer)
 
-Vue.config.productionTip = false
 // 给Vue的原型挂载 $axios 属性
 Vue.prototype.$axios = Axios
 Axios.defaults.baseURL = 'https://wx.hongyancloud.com/wxDev'
+
+Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({

@@ -7,17 +7,35 @@
       </mt-swipe-item>
     </mt-swipe>
 
-    <!-- 下有九宫格 -->
-    <div class="grid">
-      <ul>
-        <li v-for="(module, index) in modules" :key="index">
-          <router-link :to="module.route">
-            <span :class="module.className"></span>
-            <div>{{module.title}}</div>
-          </router-link>
-        </li>
-      </ul>
-    </div>
+    <template v-if="Math.random() > 0.5">
+      <!--installer.js里面的Vue全局组件-->
+      <test title="常用组件"/>
+
+      <!-- 下有九宫格 -->
+      <div class="grid">
+        <ul>
+          <li v-for="(module, index) in modules" :key="index">
+            <router-link :to="module.route">
+              <span :class="module.className"></span>
+              <div>{{module.title}}</div>
+            </router-link>
+          </li>
+        </ul>
+      </div>
+    </template>
+    <template v-else>
+      <test title="封装九宫格"/>
+      <div class="grid">
+        <my-ul>
+          <my-li v-for="(module, index) in modules" :key="index">
+            <router-link :to="module.route">
+              <span :class="module.className"></span>
+              <div>{{module.title}}</div>
+            </router-link>
+          </my-li>
+        </my-ul>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -28,21 +46,26 @@ export default {
     return {
       imgs: [], // 轮播图数据
       modules: [{
-        title: '新闻资讯', className: 'back-news', route: { name: 'home' }
+        title: '新闻资讯', className: 'back-news', route: { name: 'NewsList' }
       }, {
-        title: '图文分享', className: 'back-pic', route: { name: 'home' }
+        title: '图文分享', className: 'back-pic', route: { name: 'Home' }
       }, {
-        title: '商品展示', className: 'back-goods', route: { name: 'home' }
+        title: '商品展示', className: 'back-goods', route: { name: 'Home' }
       }, {
-        title: '留言反馈', className: 'back-feed', route: { name: 'home' }
+        title: '留言反馈', className: 'back-feed', route: { name: 'Home' }
       }, {
-        title: '搜索资讯', className: 'back-search', route: { name: 'home' }
+        title: '搜索资讯', className: 'back-search', route: { name: 'Home' }
       }, {
-        title: '联系我们', className: 'back-callme', route: { name: 'home' }
+        title: '联系我们', className: 'back-callme', route: { name: 'Home' }
       }]
     }
   },
   created () {
+    // 测试自己写的插件
+    // set方法无法调用
+    this.$log = 'abc'
+    // get方法可以
+    this.$log()
     this.$axios.get('/homepage/getHomePageList')
       .then(res => {
         this.imgs = res.data.data.map(item => item.fileRealPath)
@@ -56,7 +79,7 @@ export default {
 <style scoped>
 .mint-swipe {
   width: 100%;
-  height: 200px;
+  height: 160px;
 }
 .mint-swipe img {
   width: 100%;
