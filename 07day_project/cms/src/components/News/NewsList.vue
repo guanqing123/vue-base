@@ -3,23 +3,22 @@
     <nav-bar :title="title" />
 
     <!-- 新闻列表 -->
-    <div class="demo">
+    <div class="list">
       <ul>
-        <li v-for="(news,index) in newsList" :key="index">
-          <router-link :to="{ name:'NewsDetail',params:{id:news.id} }">
-            <img class="" :src="news.img_url">
-            <div >
+        <li v-for="(news, index) in newsList" :key="index">
+          <router-link :to="{name:'newsDetail'}">
+            <img :src="news.fileRealPath">
+            <div>
               <span>{{news.title}}</span>
-              <div class="news-desc">
-                <p>点击数:{{news.click}}</p>
-                <p>发表时间:{{news.add_time | convertTime('YYYY年MM月DD日')}}</p>
+              <div>
+                <p>点击数:{{news.id}}</p>
+                <p>发表时间:{{news.createDate}}</p>
               </div>
             </div>
           </router-link>
         </li>
       </ul>
     </div>
-
   </div>
 </template>
 
@@ -28,13 +27,15 @@ export default {
   name: 'news-list',
   data () {
     return {
-      title: '新闻列表'
+      title: '新闻列表',
+      newsList: [] // 新闻列表数据
     }
   },
   created () {
-    this.$axios.get('/sellactivity/getSellingActivityTopFive?userid = 180321105710')
+    this.$axios.get('/sellactivity/getSellingActivityTopFive?userid=180321105710')
       .then(res => {
         console.log(res)
+        this.newsList = res.data.data
       })
       .catch(error => console.log(error))
   }
@@ -42,44 +43,50 @@ export default {
 </script>
 
 <style scoped>
-.demo a {
-  display: block;
-  width: 330px;
-  height: 44px;
-  color: #000;
-  padding-left:15px;
-}
-.demo img {
-  float: left;
-  width: 42px;
-  height: 42px;
-  margin-right: 20px;
-}
-.demo a div {
-  float: left;
-  width: 238px;
-  margin-right: 20px;
-}
-.demo span {
-  display: block;
-  width: 100%;
-  font-size: 17px;
-  line-height: 21px;
-}
-.demo a p {
-  float: left;
-  color: #0bb0f5;
-  font-size: 14px;
-  line-height: 21px;
-}
-.demo p:nth-child(2) {
-  float: right;
-}
-
-.demo ul {
-  padding: 0;
-}
-.news-desc {
-  height: 35px;
-}
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .list ul {
+    padding: 0;
+  }
+  .list li {
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(200,200,200,0.5);
+  }
+  .list a {
+    display: block;
+    width: 330px;
+    height: 54px;
+    padding: 0 15px;
+  }
+  .list a img {
+    float: left;
+    width: 52px;
+    height: 52px;
+    margin-right: 20px;
+  }
+  .list a div {
+    float: left;
+    width: 238px;
+  }
+  .list span {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 17px;
+    white-space: nowrap;  /*为规定段落中的文本不换行*/
+    text-overflow: ellipsis; /*为当文本内容溢出时显示省略标记*/
+    overflow: hidden;
+  }
+  .list a p {
+    float: left;
+    color: #0bb0f5;
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .list p:nth-child(2) {
+    float: right;
+  }
 </style>
