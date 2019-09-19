@@ -18,6 +18,9 @@ import MyUl from './components/common/MyUl'
 import MyLi from './components/common/MyLi'
 import NavBar from './components/common/NavBar'
 
+// 引入Moment
+import Moment from 'moment'
+
 // mint-ui 开始
 // 引入css
 import 'mint-ui/lib/style.css'
@@ -26,6 +29,11 @@ import MintUI from 'mint-ui'
 // 安装插件
 Vue.use(MintUI) // 里面其实做的就是注册所有的全局组件,和给Vue.prototype挂载一些对象,方便你使用  组件内的this.xxx就能用了
 // mint-ui 结束
+
+// 定义全局过滤器
+Vue.filter('convertTime', function (data, formatStr) {
+  return Moment(data).format(formatStr)
+})
 
 // 注册全局组件
 Vue.component(MyUl.name, MyUl)

@@ -6,19 +6,20 @@
     <div class="list">
       <ul>
         <li v-for="(news, index) in newsList" :key="index">
-          <router-link :to="{name:'newsDetail'}">
+          <router-link :to="{name:'NewsDetail',params:{id:news.id}}">
             <img :src="news.fileRealPath">
             <div>
               <span>{{news.title}}</span>
               <div>
                 <p>点击数:{{news.id}}</p>
-                <p>发表时间:{{news.createDate}}</p>
+                <p>发表时间:{{news.createDate | convertTime('YYYY/MM/DD')}}</p>
               </div>
             </div>
           </router-link>
         </li>
       </ul>
     </div>
+
   </div>
 </template>
 
@@ -32,10 +33,10 @@ export default {
     }
   },
   created () {
-    this.$axios.get('/sellactivity/getSellingActivityTopFive?userid=180321105710')
+    this.$axios.get('/sellactivity/getSellingActivityFenye?userid=180321105710&pageNum=1&pageSize=20')
       .then(res => {
         console.log(res)
-        this.newsList = res.data.data
+        this.newsList = res.data.data.list
       })
       .catch(error => console.log(error))
   }
@@ -46,6 +47,9 @@ export default {
   * {
     margin: 0;
     padding: 0;
+  }
+  .list {
+    margin-bottom: 55px;
   }
   .list ul {
     padding: 0;

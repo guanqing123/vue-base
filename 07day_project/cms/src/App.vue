@@ -67,6 +67,8 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.mint-tabbar {
+  position: fixed;
+}
 </style>
