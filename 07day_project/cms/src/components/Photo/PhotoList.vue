@@ -6,7 +6,7 @@
         <div class="photo-header">
             <ul>
               <li v-for="category in categories" :key="category.id">
-                <a href="javascript:;">{{category.title}}</a>
+                <a href="javascript:;" @click="navigateToCateById(category.id)">{{category.title}}</a>
               </li>
             </ul>
         </div>
@@ -38,23 +38,46 @@ export default {
     }
   },
   created () {
-    let instance = axios.create({
-      baseURL: ''
-    })
     console.log(this.$route.query.categoryId)
     // 1: 获取分类id
     let { categoryId } = this.$route.query
-    // 2: 发起请求
-    instance.get('static/data/photo.json')
-      .then(res => {
-        // 3: 渲染数据
-        this.categories = res.data.category
-        // 加入全部到数组的顶部
-        this.categories.unshift({id: 0, title: '全部'})
-
-        this.photos = res.data.photos[categoryId]
+    this.loadPhotosById(categoryId)
+  },
+  beforeRouteUpdate (to, from, next) {
+    // console.log(to)
+    // console.log(from)
+    let { categoryId } = to.query
+    // 发请求更改页面数据
+    this.loadPhotosById(categoryId)
+    next()
+    // 在当前路由改变，但是该组件被复用时调用
+    // 举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，
+    // 由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。
+    // 可以访问组件实例 `this`
+  },
+  methods: {
+    navigateToCateById (id) {
+      this.$router.push({
+        name: 'PhotoList',
+        query: {categoryId: id}
       })
-      .catch(err => console.log(err))
+    },
+    loadPhotosById (categoryId) {
+      let instance = axios.create({baseURL: ''})
+      // 2: 发起请求
+      instance.get('static/data/photo.json')
+        .then(res => {
+          // 3: 渲染数据
+          this.categories = res.data.category
+          // 加入全部到数组的顶部
+          this.categories.unshift({id: 0, title: '全部'})
+
+          this.photos = res.data.photos[categoryId].sort(function () {
+            return Math.random() > 0.5 ? -1 : 1
+          })
+        })
+        .catch(err => console.log(err))
+    }
   }
 }
 </script>
