@@ -44,13 +44,13 @@ export default {
 </script>
 
 <style scoped>
-  * {
+  ul,p {
     margin: 0;
     padding: 0;
   }
-  .list {
+  /*.list {
     margin-bottom: 55px;
-  }
+  }*/
   .list ul {
     padding: 0;
   }

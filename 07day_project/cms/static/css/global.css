@@ -7,3 +7,6 @@ a {
 li {
   list-style: none;
 }
+.container {
+  margin-bottom: 55px;
+}

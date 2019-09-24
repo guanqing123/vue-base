@@ -3,7 +3,7 @@
     <!-- 顶部标题栏 -->
     <mt-header :title="title"></mt-header>
 
-    <router-view/>
+    <router-view class="container" />
 
     <!-- 底部tabbar -->
     <mt-tabbar v-model="selected">

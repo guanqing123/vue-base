@@ -116,9 +116,9 @@ export default {
 }
 
 /*下面的图片*/
-.photo-list {
+/*.photo-list {
   margin-bottom: 55px;
-}
+}*/
 .photo-list li {
   list-style: none;
   position: relative;
