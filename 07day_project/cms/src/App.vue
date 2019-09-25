@@ -3,6 +3,7 @@
     <!-- 顶部标题栏 -->
     <mt-header :title="title"></mt-header>
 
+    <!--所有即将变化的页面中都会被container的样式生效,相当于一个div包裹-->
     <router-view class="container" />
 
     <!-- 底部tabbar -->

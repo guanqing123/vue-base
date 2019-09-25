@@ -13,14 +13,15 @@
         <div class="photo-list">
           <ul>
             <li v-for="(photo, index) in photos" :key="index">
-              <a>
-                <img v-lazy="photo.img_url">
+              <router-link :to="{ name: 'PhotoDetail', params:{id: photo.id}}">
+                <img v-if="$route.query.categoryId === 0" v-lazy="photo.img_url">
+                <img v-else :src="photo.img_url"/>
                 <p>
                   <span>{{photo.title}}</span>
                   <br>
                   <span>{{photo.zhaiyao}}</span>
                 </p>
-              </a>
+              </router-link>
             </li>
           </ul>
         </div>
@@ -43,10 +44,17 @@ export default {
     let { categoryId } = this.$route.query
     this.loadPhotosById(categoryId)
   },
+  // 路由的参数改变
   beforeRouteUpdate (to, from, next) {
     // console.log(to)
     // console.log(from)
     let { categoryId } = to.query
+
+    // 防止v-lazy image切换的时候有bug
+    if (categoryId === 0 && this.photos.length !== 0) {
+      this.photos = []
+    }
+
     // 发请求更改页面数据
     this.loadPhotosById(categoryId)
     next()
@@ -112,7 +120,7 @@ export default {
   white-space: nowrap;
   overflow-x: auto;
   padding-left: 0px;
-  margin: 5;
+  margin: 5px;
 }
 
 /*下面的图片*/
