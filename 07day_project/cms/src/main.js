@@ -17,6 +17,7 @@ import Installer from '@/plugins/installer'
 import MyUl from './components/common/MyUl'
 import MyLi from './components/common/MyLi'
 import NavBar from './components/common/NavBar'
+import Comment from './components/common/Comment'
 
 // 引入Moment
 import Moment from 'moment'
@@ -35,14 +36,19 @@ Vue.use(MintUI) // 里面其实做的就是注册所有的全局组件,和给Vue
 Vue.use(VuePreview)
 
 // 定义全局过滤器
+Moment.locale('zh-cn')
 Vue.filter('convertTime', function (data, formatStr) {
   return Moment(data).format(formatStr)
+})
+Vue.filter('relativeTime', function (data) {
+  return Moment(data).fromNow()
 })
 
 // 注册全局组件
 Vue.component(MyUl.name, MyUl)
 Vue.component(MyLi.name, MyLi)
 Vue.component(NavBar.name, NavBar)
+Vue.component(Comment.name, Comment)
 
 // 安装插件
 Vue.use(Installer)
