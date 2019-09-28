@@ -45,6 +45,9 @@ export default new Router({
       path: '/photo/detail/:id',
       name: 'PhotoDetail',
       component: PhotoDetail
+    }, {
+      path: '/goods/list/:page',
+      name: 'GoodsShow'
     }
   ]
 })

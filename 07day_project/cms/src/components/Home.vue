@@ -50,7 +50,7 @@ export default {
       }, {
         title: '图文分享', className: 'back-pic', route: { name: 'PhotoList', query: {categoryId: 0} }
       }, {
-        title: '商品展示', className: 'back-goods', route: { name: 'Home' }
+        title: '商品展示', className: 'back-goods', route: { name: 'GoodsShow', params: {page: 1} }
       }, {
         title: '留言反馈', className: 'back-feed', route: { name: 'Home' }
       }, {
