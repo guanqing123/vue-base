@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16952b25-dba0-4ec5-ba90-af7a7aaae63a" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/07day_project/cms/src/components/Goods/GoodsShow.vue" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/07day_project/cms/src/components/Home.vue" afterPath="$PROJECT_DIR$/07day_project/cms/src/components/Home.vue" />
       <change beforePath="$PROJECT_DIR$/07day_project/cms/src/router/index.js" afterPath="$PROJECT_DIR$/07day_project/cms/src/router/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,21 +21,29 @@
       <file leaf-file-name="Home.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/07day_project/cms/src/components/Home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="1248">
               <caret line="52" column="73" lean-forward="false" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="73" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/07day_project/cms/src/router/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoodsShow.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/07day_project/cms/src/components/Goods/GoodsShow.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -75,16 +83,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
               <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="iconfont.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/07day_project/cms/node_modules/mint-ui/src/assets/font/iconfont.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -153,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/05day_webpack/05_less_loader/main.less" />
         <option value="$PROJECT_DIR$/05day_webpack/05_less_loader/webpack.dev.config.js" />
         <option value="$PROJECT_DIR$/05day_webpack/06_html/webpack.dev.config.js" />
         <option value="$PROJECT_DIR$/05day_webpack/06_html/src/index.html" />
@@ -204,6 +201,7 @@
         <option value="$PROJECT_DIR$/07day_project/cms/package.json" />
         <option value="$PROJECT_DIR$/07day_project/cms/src/components/Home.vue" />
         <option value="$PROJECT_DIR$/07day_project/cms/src/router/index.js" />
+        <option value="$PROJECT_DIR$/07day_project/cms/src/components/Goods/GoodsShow.vue" />
       </list>
     </option>
   </component>
@@ -299,14 +297,23 @@
               <item name="07day_project" type="462c0819:PsiDirectoryNode" />
               <item name="cms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vue-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vue-base" type="462c0819:PsiDirectoryNode" />
+              <item name="07day_project" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="router" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,12 +408,13 @@
       <workItem from="1569457774758" duration="19295000" />
       <workItem from="1569544177550" duration="610000" />
       <workItem from="1569586760910" duration="91000" />
-      <workItem from="1569676266081" duration="104000" />
+      <workItem from="1569676266081" duration="164000" />
+      <workItem from="1569762240509" duration="102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205412000" />
+    <option name="totallyTimeSpent" value="205574000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,13 +462,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/07day_project/cms/src/components/common/NavBar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/05day_webpack/08_es6/src/myGirl.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -795,7 +796,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/07day_project/cms/src/components/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
+        <state relative-caret-position="1248">
           <caret line="52" column="73" lean-forward="false" selection-start-line="52" selection-start-column="64" selection-end-line="52" selection-end-column="73" />
           <folding />
         </state>
@@ -803,11 +804,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/07day_project/cms/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="49" column="23" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07day_project/cms/src/components/Goods/GoodsShow.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
